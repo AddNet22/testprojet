@@ -34,7 +34,7 @@ class HomePage extends StatelessWidget {
       items: const [
         BottomNavigationBarItem(
           label: 'Home',
-          icon: Icon(Icons.access_alarm),
+          icon: Icon(Icons.home),
         ),
         BottomNavigationBarItem(
           label: 'Home',
