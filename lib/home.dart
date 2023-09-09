@@ -29,18 +29,29 @@ class HomePage extends StatelessWidget {
   }
 
   Widget NavigationBar() {
-    return BottomNavigationBar(
-      type: BottomNavigationBarType.fixed,
-      items: const [
-        BottomNavigationBarItem(
-          label: 'Home',
-          icon: Icon(Icons.home),
+    return Container(
+      padding: const EdgeInsets.only(bottom: 15, left: 100, right: 100),
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(30),
+        child: BottomNavigationBar(
+          type: BottomNavigationBarType.fixed,
+          backgroundColor: Colors.red,
+          items: const [
+            BottomNavigationBarItem(
+              label: 'Home',
+              icon: Icon(Icons.home),
+            ),
+            BottomNavigationBarItem(
+              label: 'Home',
+              icon: Icon(Icons.access_alarm),
+            ),
+            BottomNavigationBarItem(
+              label: 'Home',
+              icon: Icon(Icons.access_alarm),
+            ),
+          ],
         ),
-        BottomNavigationBarItem(
-          label: 'Home',
-          icon: Icon(Icons.access_alarm),
-        ),
-      ],
+      ),
     );
   }
 }
